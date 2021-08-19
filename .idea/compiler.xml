@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbit-consumer" />
+        <module name="datastructure" />
         <module name="rabbit-producer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rabbit-consumer" target="8" />
-      <module name="rabbit-producer" target="8" />
+      <module name="datastructure" target="1.5" />
+      <module name="rabbit-consumer" target="11" />
+      <module name="rabbit-producer" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
