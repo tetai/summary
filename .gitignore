@@ -1,137 +1,61 @@
-# .gitignore for maven
-target/
-*.releaseBackup
+### gradle ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-# web application files
-#/web-app/WEB-INF
-
-# IDE support files
-/.classpath
-/.launch
-/.project
-/.settings
-/*.launch
-/*.tmproj
-/ivy*
-/eclipse
-
-# default HSQL database files for production mode
-/prodDb.*
-
-# general HSQL database files
-*Db.properties
-*Db.script
-
-# logs
-/stacktrace.log
-/test/reports
-/logs
-*.log
-*.log.*
-
-# project release file
-/*.war
-
-# plugin release file
-/*.zip
-/*.zip.sha1
-
-# older plugin install locations
-/plugins
-/web-app/plugins
-/web-app/WEB-INF/classes
-
-# "temporary" build files
-target/
-out/
-build/
-
-# other
-*.iws
-
-#.gitignore for java
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-## .gitignore for eclipse
-
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
+### STS ###
 .settings/
-.loadpath
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+backup/
 
-# External tool builders
-.externalToolBuilders/
+### IntelliJ IDEA ###
+/.idea/
 
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-## .gitignore for intellij
-
+/private/
+/storage/
+/litemall.iml
+.checkstyle
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.idea/
+rebel.xml
 
-## .gitignore for linux
-.*
-!.gitignore
-!.gitattributes
-!.editorconfig
-!.eslintrc
-!.travis.yml
-*~
 
-## .gitignore for windows
+### maven ###
+target/
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
 
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+### logs ####
+/logs/
+*.log
 
-# Folder config file
-Desktop.ini
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-## .gitignore for mac os x
-
+### system ignore ###
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
+Thumbs.db
+Servers
+.metadata
+upload
+gen_code
 
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-## hack for graddle wrapper
-!wrapper/*.jar
-!**/wrapper/*.jar
-
-## resource
-!/meizupay/meizupay-res/**
+node_modules/
+node_modules
+/node_modules/
