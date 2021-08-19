@@ -47,11 +47,16 @@ public class MyArray<T> {
         }
         return -1;
     }
+    public T removeLast() {
+       return removeIndex(size-1);
+    }
+    public T removeFirst() {
 
-    public void remove(T item) {
+        return removeIndex(0);
+    }
 
-        int index = contain(item);
-
+    public T removeIndex(int index) {
+        T temp = data[index];
         if (index == -1) {
             throw new RuntimeException("无此元素");
         }
@@ -66,8 +71,16 @@ public class MyArray<T> {
         size--;
 
         if (size == data.length/4) {
-            reset(data.length/4);
+            reset(data.length/2);
         }
+        return temp;
+    }
+
+    public T remove(T item) {
+
+        int index = contain(item);
+
+        return removeIndex(index);
     }
 
 
@@ -97,5 +110,13 @@ public class MyArray<T> {
                 ", size=" + size +
                 ", cap=" + data.length +
                 '}';
+    }
+
+    public T getLast() {
+        return data[size-1];
+    }
+
+    public T getFrist() {
+        return data[0];
     }
 }
