@@ -1,0 +1,15 @@
+server:
+  port: 9091
+
+# rabbitmq的相关配置
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: root
+    password: root
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual    # 更改消息的应答模式为手动应答
+        # prefetch: 1
